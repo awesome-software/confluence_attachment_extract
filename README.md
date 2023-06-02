@@ -16,7 +16,30 @@ the parent page.
 
 ## Syntax
 
-```confluence_attachment_extract.py  <confluence xml export directory>```
+```
+usage: confluence_attachment_extract [-h] [-v] [-i] directory
+
+extracts attachment files from a Confluence XML dump
+
+positional arguments:
+  unzipped XML export directory
+
+options:
+  -h, --help     show this help message and exit
+  -v, --verbose  more output
+  -i, --images   include image files, usually not necessary when also exporting a PDF
+
+```
+
+## Before you start
+Create a virtual environment and install the necessary python modules
+
+1. python3 -m venv venv
+2. venv/bin/activate 
+3. pip install -r requirements.txt
+
+Then continue with usage below.
+
 
 ## Usage
 
